@@ -13,6 +13,6 @@ class PemasukanController extends Controller
     {
         $pemasukan = Keuangan::where('tipe', 'Pemasukan')->orderBy('id', 'DESC')->get();
         
-        return view('pemasukan.index', compact('pemasukan', $pemasukan));
+        return view('pemasukan.index', compact('pemasukan'));
     }
 }

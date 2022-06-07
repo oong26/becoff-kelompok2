@@ -18,7 +18,7 @@ class PengeluaranController extends Controller
     {
         $pengeluaran = Keuangan::where('tipe', 'Pengeluaran')->orderBy('id', 'DESC')->get();
         
-        return view('pengeluaran.index', compact('pengeluaran', $pengeluaran));
+        return view('pengeluaran.index', compact('pengeluaran'));
     }
 
     /**
